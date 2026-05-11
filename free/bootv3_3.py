@@ -52,8 +52,9 @@ else:
 # Configuración
 SSID = "motog35"
 PASSWORD = "12345678"
-WEBSOCKET_URL = "wss://bio-data-production.up.railway.app/"
-USERNAME = "MHT-26-prueba"
+# WEBSOCKET_URL = "wss://bio-data-production.up.railway.app/" # INCN
+WEBSOCKET_URL = "wss://bio-data-pro-production.up.railway.app/" # version PRO
+USERNAME = "MHT26-PRO-01"
 
 # Pines
 DHT22_PIN = 4
