@@ -1,0 +1,9 @@
+{
+  "ssid": "motog35",
+  "password": "12345678",
+  "websocket_url": "wss://bio-data-pro-production.up.railway.app/",
+  "username": "MHT26-PRO-01",
+  "display_type": "SSD1306",
+  "display_rotate_180": false,
+  "send_interval_ms": 2000
+}
