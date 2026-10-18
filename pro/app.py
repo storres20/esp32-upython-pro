@@ -560,7 +560,7 @@ def network_thread():
 
                     last_recv = now
 
-                if ws.connected and time.ticks_diff(now, last_send) >= 2000:
+                if ws.connected and time.ticks_diff(now, last_send) >= SEND_INTERVAL_MS:
                     try:
                         t = time.gmtime()
                         datetime_utc = f"{t[0]:04d}-{t[1]:02d}-{t[2]:02d}T{t[3]:02d}:{t[4]:02d}:{t[5]:02d}Z"

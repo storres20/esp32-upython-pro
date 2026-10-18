@@ -1,0 +1,23 @@
+{
+  "ssid": "TP-Link_DD3F",
+  "password": "76146794",
+  "websocket_url": "wss://bio-data-pro-production.up.railway.app/",
+  "username": "ULT26-001",
+  "display_type": "SSD1306",
+  "display_rotate_180": false,
+  "send_interval_ms": 2000,
+
+  "calibration": {
+    "enabled": true,
+    "method": "linear_interpolation",
+    "out_of_range": "nearest",
+    "points": [
+      [1.6, 0.47],
+      [3.5, 0.56],
+      [5.5, 0.55]
+    ]
+  }
+}
+
+// si "enabled": false
+// entonces no surte efecto los parametros de calibracion

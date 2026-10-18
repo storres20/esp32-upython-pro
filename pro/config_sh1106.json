@@ -1,0 +1,9 @@
+{
+  "ssid": "TP-Link_DD3F",
+  "password": "76146794",
+  "websocket_url": "wss://bio-data-pro-production.up.railway.app/",
+  "username": "MHT26-PRO-01",
+  "display_type": "SH1106",
+  "display_rotate_180": true,
+  "send_interval_ms": 2000
+}

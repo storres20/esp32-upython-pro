@@ -1,0 +1,99 @@
+// Fecha 17/08/2026  18:52h estoy implementando esta plantilla para ayudar con la correccion de
+// temperatura basado en el Certificado de calibracion, cuando se dé el caso,
+// de otro modo, se usa la plantilla "sin calibracion"
+
+// sin calibracion
+
+{
+  "ssid": "TP-Link_DD3F",
+  "password": "76146794",
+  "websocket_url": "wss://bio-data-pro-production.up.railway.app/",
+  "username": "MHT26-PRO-01",
+
+  "display_type": "SH1106",
+  "display_rotate_180": true,
+
+  "send_interval_ms": 2000,
+
+  "calibration": {
+    "enabled": false,
+    "method": "linear_interpolation",
+    "out_of_range": "nearest",
+    "points": []
+  }
+}
+
+// calibracion de 2 puntos
+
+{
+  "ssid": "TP-Link_DD3F",
+  "password": "76146794",
+  "websocket_url": "wss://bio-data-pro-production.up.railway.app/",
+  "username": "MHT26-PRO-01",
+
+  "display_type": "SH1106",
+  "display_rotate_180": true,
+
+  "send_interval_ms": 2000,
+
+  "calibration": {
+    "enabled": true,
+    "method": "linear_interpolation",
+    "out_of_range": "nearest",
+    "points": [
+      [-30.0, 0.20],
+      [-20.0, -0.10]
+    ]
+  }
+}
+
+// calibracion de 3 puntos
+
+{
+  "ssid": "TP-Link_DD3F",
+  "password": "76146794",
+  "websocket_url": "wss://bio-data-pro-production.up.railway.app/",
+  "username": "MHT26-PRO-01",
+
+  "display_type": "SH1106",
+  "display_rotate_180": true,
+
+  "send_interval_ms": 2000,
+
+  "calibration": {
+    "enabled": true,
+    "method": "linear_interpolation",
+    "out_of_range": "nearest",
+    "points": [
+      [-30.9, 1.05],
+      [-25.9, 0.92],
+      [1.6, 0.47]
+    ]
+  }
+}
+
+// nota: [indicacion_termometro, correccion]
+// plasma
+
+{
+  "ssid": "TP-Link_DD3F",
+  "password": "76146794",
+  "websocket_url": "wss://bio-data-pro-production.up.railway.app/",
+  "username": "ULT26-001",
+  "display_type": "SH1106",
+  "display_rotate_180": true,
+  "send_interval_ms": 2000,
+
+  "calibration": {
+    "enabled": true,
+    "method": "linear_interpolation",
+    "out_of_range": "nearest",
+    "points": [
+      [-30.9, 1.05],
+      [-25.9, 0.92],
+      [1.6, 0.47],
+      [3.5, 0.56],
+      [5.5, 0.55]
+    ]
+  }
+}
